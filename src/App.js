@@ -20,20 +20,20 @@ const App = () => {
     } else {
       setResult(value);
     }
-  }
+  };
 
-  function emptyScreen() {
+  function clearResults() {
     setResult(0);
-  }
+  };
 
   function calculate() {
     const calculation = eval(result);
     setResult(calculation.toString());
-  }
+  };
 
   return (
     <Calculator>
-      <Screen result={result} emptyScreen={emptyScreen} />
+      <Screen result={result} clearResults={clearResults} />
       <Keys addToScreen={addToScreen} calculate={calculate} />
     </Calculator>
   );

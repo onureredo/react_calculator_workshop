@@ -1,9 +1,9 @@
 import React from "react";
 
-const Screen = ({ result, emptyScreen }) => {
+const Screen = ({ result, clearResults }) => {
   return (
     <div className="top">
-      <span onClick={emptyScreen} className="clear">
+      <span onClick={clearResults} className="clear">
         C
       </span>
       <div className="screen">{result}</div>
