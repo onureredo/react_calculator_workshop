@@ -6,8 +6,7 @@
 
 - [React Components and Props](https://reactjs.org/docs/components-and-props.html)
 - [Passing props to a Component](https://beta.reactjs.org/learn/passing-props-to-a-component)
-- [React State](https://www.w3schools.com/react/react_state.asp)
-- [useState Hook](https://www.w3schools.com/react/react_usestate.asp)
+- [useState Hook](https://reactjs.org/docs/hooks-state.html)
 - [React Update Arrays in State](https://beta.reactjs.org/learn/updating-arrays-in-state)
 
 ## Methods we used
