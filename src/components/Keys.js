@@ -1,24 +1,34 @@
 import React from "react";
 
-const Keys = () => {
+const Keys = ({ addToScreen, calculate }) => {
   return (
     <div className="keys">
-      <span>7</span>
-      <span>8</span>
-      <span>9</span>
-      <span className="operator">+</span>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
-      <span className="operator">-</span>
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span className="operator">/</span>
-      <span>0</span>
-      <span>.</span>
-      <span className="eval">=</span>
-      <span className="operator">x</span>
+      <span onClick={() => addToScreen("7")}>7</span>
+      <span onClick={() => addToScreen("8")}>8</span>
+      <span onClick={() => addToScreen("9")}>9</span>
+      <span onClick={() => addToScreen("+")} className="operator">
+        +
+      </span>
+      <span onClick={() => addToScreen("4")}>4</span>
+      <span onClick={() => addToScreen("5")}>5</span>
+      <span onClick={() => addToScreen("6")}>6</span>
+      <span onClick={() => addToScreen("-")} className="operator">
+        -
+      </span>
+      <span onClick={() => addToScreen("1")}>1</span>
+      <span onClick={() => addToScreen("2")}>2</span>
+      <span onClick={() => addToScreen("3")}>3</span>
+      <span onClick={() => addToScreen("/")} className="operator">
+        /
+      </span>
+      <span onClick={() => addToScreen("0")}>0</span>
+      <span onClick={() => addToScreen(".")}>.</span>
+      <span onClick={calculate} className="eval">
+        =
+      </span>
+      <span onClick={() => addToScreen("*")} className="operator">
+        x
+      </span>
     </div>
   );
 };
