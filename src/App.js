@@ -1,10 +1,14 @@
 import './style.css';
+import Calculator from "./components/Calculator";
+import Screen from "./components/Screen";
+import Keys from "./components/Keys";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Calculator>
+      <Screen />
+      <Keys />
+    </Calculator>
   );
 }
 
